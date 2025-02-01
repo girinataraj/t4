@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trip Booking System</title>
+  <link rel="stylesheet" href="/css/trip.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Trip Booking System</h1>
+      <button id="addTripButton" class="add-button">Add Trip</button>
+    </header>
+
+    <!-- Trip Form -->
+    <div id="tripForm" class="trip-form hidden">
+      <h2>Add New Trip</h2>
+      <form id="tripInputForm">
+        <label for="driverName">Driver Name:</label>
+        <input type="text" id="driverName" placeholder="Enter Driver Name" required>
+
+        <label for="driverId">Driver ID:</label>
+        <input type="text" id="driverId" placeholder="Enter Driver ID" required>
+
+        <label for="vehicleId">Vehicle ID:</label>
+        <input type="text" id="vehicleId" placeholder="Enter Vehicle ID" required>
+
+        <label for="tripDate">Trip Date:</label>
+        <input type="date" id="tripDate" required>
+
+        <label for="tripTime">Trip Time:</label>
+        <input type="time" id="tripTime" required>
+
+        <button type="submit" class="submit-button">Add Trip</button>
+      </form>
+    </div>
+
+    <!-- Trip Data Table -->
+    <div class="trips-section">
+      <h2>Trip Data</h2>
+      <table id="tripTable">
+        <thead>
+          <tr>
+            <th>Driver Name</th>
+            <th>Driver ID</th>
+            <th>Vehicle ID</th>
+            <th>Date</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Trip rows will be dynamically added here -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Trip Process Button -->
+    <div class="trip-process-section">
+      <a href="/html/tripprocess.html" class="trip-process-button">Trip Process</a>
+    </div>
+  </div>
+
+  <script src="/js/trip.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assign Vehicle to Driver</title>
+    <link rel="stylesheet" href="/css/Assign vehicle to Driver.css">
+</head>
+<body>
+    <header>
+        <h1>ASSIGN VEHICLE TO DRIVER</h1>
+    </header>
+    
+    <div class="container">
+        <h2>Assign Vehicle to Driver</h2>
+        <form id="assign-form">
+            <label for="vehicle-id">Vehicle ID:</label>
+            <select id="vehicle-id" name="vehicle-id">
+                <option value="V001">V001</option>
+                <option value="V002">V002</option>
+                <option value="V003">V003</option>
+            </select>
+            
+            <label for="registration-id">Registration ID:</label>
+            <select id="registration-id" name="registration-id">
+                <option value="R001">R001</option>
+                <option value="R002">R002</option>
+                <option value="R003">R003</option>
+            </select>
+            
+            <label for="driver-id">Driver ID:</label>
+            <select id="driver-id" name="driver-id" onchange="updateDriverName()">
+                <option value="D001">D001 - John Doe</option>
+                <option value="D002">D002 - Jane Smith</option>
+                <option value="D003">D003 - Mike Johnson</option>
+            </select>
+            
+            <label for="driver-name">Driver Name:</label>
+            <input type="text" id="driver-name" name="driver-name" placeholder="Driver Name" required>
+            
+            <label for="shift-mode">Shift Mode:</label>
+            <select id="shift-mode" name="shift-mode">
+                <option value="full-time">Full-Time</option>
+                <option value="off-time">Off-Time</option>
+                <option value="shift">Shift</option>
+            </select>
+            
+            <button type="submit">Assign Driver</button>
+            <button type="button" onclick="goBack()">Back</button>
+        </form>
+    </div>
+    
+    <div class="container">
+        <h2>Assigned Drivers</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Vehicle ID</th>
+                    <th>Registration ID</th>
+                    <th>Driver ID</th>
+                    <th>Driver Name</th>
+                    <th>Shift Mode</th>
+                </tr>
+            </thead>
+            <tbody id="assigned-list">
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="/js/Assign vehicle to Driver.js"></script>
+</body>
+</html>

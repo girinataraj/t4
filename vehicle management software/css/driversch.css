@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  color: #1d1b31;
+}
+
+/* Form Styles */
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+thead {
+  background-color: greenyellow;
+  color: white;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Status Colors */
+.status-available {
+  color: green;
+  font-weight: bold;
+}
+
+.status-busy {
+  color: red;
+  font-weight: bold;
+}
+
+/* Small Button Styles */
+.small-btn {
+  width: auto;
+  padding: 6px 12px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.small-btn:hover {
+  background-color: blueviolet;
+}
+
+/* Remove Button */
+.remove-btn {
+  background-color: red;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+.remove-btn:hover {
+  background-color: darkred;
+}
+
+/* Back Button */
+.back-btn {
+  background-color: gray;
+}
+.back-btn:hover {
+  background-color: darkgray;
+}

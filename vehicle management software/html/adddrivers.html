@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> NEW Driver</title>
+    <link rel="stylesheet" href="/css/adddriver.css">
+</head>
+<body>
+    <h1>New Driver</h1>
+    <div class="container">
+        <form id="driverForm">
+            <div class="column">
+                <div class="form-group">
+                    <label for="driverNumber">Driver Number</label>
+                    <input type="text" id="driverNumber" placeholder="Enter Driver Number" required>
+                </div>
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" placeholder="Enter First Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" placeholder="Enter Last Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email (Optional)</label>
+                    <input type="email" id="email" placeholder="Enter Email Address">
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="text" id="phoneNumber" placeholder="Enter Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" placeholder="Enter Address" required>
+                </div>
+                <div class="form-group">
+                    <label for="aadharNumber">Aadhar Number</label>
+                    <input type="text" id="aadharNumber" placeholder="Enter Aadhar Number" required>
+                </div>
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <select id="country" required>
+                        <option value="">Select Country</option>
+                        <option value="USA">USA</option>
+                        <option value="India">India</option>
+                        <option value="UK">UK</option>
+                        <option value="Canada">Canada</option>
+                    </select>
+                </div>
+            </div>
+            <div class="column">
+                <div class="form-group">
+                    <label for="license">Driver License</label>
+                    <input type="text" id="license" placeholder="Enter License Number" required>
+                </div>
+                <div class="form-group">
+                    <label for="currentVehicle">Current Vehicle</label>
+                    <input type="text" id="currentVehicle" placeholder="Enter Vehicle ID">
+                </div>
+                <div class="form-group">
+                    <label for="hourlyRate">Hourly Rate ($)</label>
+                    <input type="number" id="hourlyRate" placeholder="Enter Hourly Rate">
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="emergencyNumber">Emergency Number</label>
+                    <input type="text" id="emergencyNumber" placeholder="Enter 10-digit Number" required>
+                </div>
+                <div class="form-group photo-upload">
+                    <label>Photo</label>
+                    <img src="https://via.placeholder.com/120" alt="Driver Photo">
+                    <input type="file" accept="image/*" required>
+                </div>
+            </div>
+            <div class="button-container">
+                <button type="submit">Submit</button>
+                <button type="button" id="backButton">Back to Home</button>
+            </div>
+        </form> 
+    </div> 
+    <script src="/js/adddrivers.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Management</title>
+    <link rel="stylesheet" href="../css/Admin.css">
+    <!--Boxicons CDN Link-->
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <div  class="profile-details">
+        <div class="profile-content1"><img src="/image/infratex.jpeg" alt="profile"></div>
+    </div>
+<div class="menu">
+  <div class="menubar">
+    <div class="sidebar close">
+        <div class="logo-deatiles">
+            <i class='bx bxl-html5'></i>
+            <span class="logo_name">Management</span> 
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="link_name">Admin</span>
+                </a>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bxs-car'></i>
+                        <span class="link_name">vehicle's</span>
+                    </a>
+                    <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a href="/html/vehicledatabase.html">Vehicle Category(vehicle data)</a></li>
+                    <li><a href="/html/addvehicle.html">Add New Vehicle </a></li>
+                    <li><a href="/html/vehiclemaintenance .html">vehicle maintenance </a></li>
+                    <li><a href="/html/Assign vehicle to Driver.html">Assign vehicle to Driver</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bx-male' ></i>
+                        <span class="link_name">Driver's</span>
+                    </a>
+                    <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a href="/html/viewalldriver.html">view All Drivers </a></li>
+                    <li><a href="/html/adddrivers.html">Add new Driver</a></li>
+                    <li><a href="/html/adddrivers.html">Update driver Information</a></li>
+                    <!--<li><a href="/html/View Assigned vechicles.html">View Assigned vehicles</a></li>-->
+                    <li><a href="/html/shiftscheduling.html">Shift Scheduling</a></li>
+                   <!-- <li><a href="#">Driver Document</a></li>-->
+                </ul>
+            </li>
+            <li>
+            <!--<div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bx-user-plus' ></i>
+                        <span class="link_name">Customer</span>
+                    </a>
+                    <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a href="#">Customer List</a></li>
+                    <li><a href="#">Customer profiles</a></li>
+                    <li><a href="#">Customer Feedback</a></li>
+                    <li><a href="#">Pending Verification</a></li>
+                    <li><a href="#">Customer Reports</a></li>
+                    <li><a href="#">Customer History</a></li>
+                </ul>
+            </li>-->
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bxs-battery-charging' ></i>
+                        <span class="link_name">Fuel</span>
+                    </a>
+                    <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a href="#">Fuel consumption details</details></a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bx-dollar-circle' ></i>
+                        <span class="link_name">Expense</span>
+                    </a>
+                    <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a href="#">Expense Details</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bx-table'></i>
+                        <span class="link_name">Drivers scheduling</span>
+                    </a>
+                    <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a href="/html/driversch.html">Add Driver Schedule</a></li>
+                    <li><a href="/html/viewdriversch.html">View Driver Schedules</a></li>
+                    <li><a href="/html/ModifySchedule.html">Modify Schedule</a></li>
+                    <li><a href="#">Unassigned Drivers</a></li>
+                    <li><a href="#">Emergency Reassignment</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="https://www.bing.com/maps?&mepi=12~Directions~Unknown~Direction_Button&ty=0&rtp=pos.11.290657997131348_77.61805725097656_Nandha%20Engineering%20Collegee~&mode=d&v=2&sV=1">
+                       <i class='bx bx-location-plus'></i>
+                       <span class="link_name">Location</span>
+                </a>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bx-map-pin' ></i>
+                        <span class="link_name">Live Tracking</span>
+                    </a>
+                    <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a href="/html/trip.html">Real-Time Dashboard</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bx-cog' ></i>
+                        <span class="link_name">Setting's</span>
+                    </a>
+                    <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a href="#">Backup and restore</a></li>
+                    <li><a href="#">Live Tracking Settings</a></li>
+                    <li><a href="#">Driver Setting</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bx-user-circle' ></i>
+                        <span class="link_name">User's</span>
+                    </a>
+                    <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a href="#">User profiles</a></li>
+                    <li><a href="#">User List</a></li>
+                </ul>
+            </li> 
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bxs-key' ></i>
+                        <span class="link_name">Change password</span>
+                    </a>
+                    <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a href="#">Password Management</a></li>
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
+    <ul>
+            <div id="email-contact">
+                <i class='bx bxl-gmail'></i>
+                <a href="mailto:dhanaseelandhanaseelan464@gmail.com" aria-label="Email Us">
+                    <i data-lucide="mail">Email</i>
+                </a>
+            </div>
+            <script src="/js/admin.js"></script>
+    </ul>
+    </ul>
+</body>
+</html>

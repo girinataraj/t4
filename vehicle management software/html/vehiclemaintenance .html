@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Inspection Checklist</title>
+    <link rel="stylesheet" href="/css/vehiclemaintenance .css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vehicle Inspection Checklist</h1>
+
+        <div class="form-section">
+            <label for="company-name">Company Name:</label>
+            <input type="text" id="company-name" name="company-name">
+
+            <label for="inspector-name">Inspector Name:</label>
+            <input type="text" id="inspector-name" name="inspector-name">
+
+            <div class="form-grid">
+                <div>
+                    <label for="vehicle-make">Vehicle Make:</label>
+                    <input type="text" id="vehicle-make" name="vehicle-make">
+                </div>
+                <div>
+                    <label for="vehicle-model">Vehicle Model:</label>
+                    <input type="text" id="vehicle-model" name="vehicle-model">
+                </div>
+                <div>
+                    <label for="year">Year:</label>
+                    <input type="number" id="year" name="year">
+                </div>
+                <div>
+                    <label for="mileage">Mileage:</label>
+                    <input type="number" id="mileage" name="mileage">
+                </div>
+                <div>
+                    <label for="license-plate">License Plate:</label>
+                    <input type="text" id="license-plate" name="license-plate">
+                </div>
+                <div>
+                    <label for="inspection-date">Inspection Date:</label>
+                    <input type="date" id="inspection-date" name="inspection-date">
+                </div>
+                <div>
+                    <label for="Break system">Brake System (e.g., brake pads, fluid, hoses):</label>
+                    <input type="text" id="Break system" name="Break system">
+                </div>
+                <div>
+                    <label for="Engine Operation">Engine Operation (e.g., oil leaks, performance):</label>
+                    <input type="text" id="Engine Operation" name="Engine Operation">
+                </div>
+                <div>
+                    <label for="Steering Mechanism">Steering Mechanism (e.g., alignment, power steering):</label>
+                    <input type="text" id="Steering Mechanism" name="Steering Mechanism">
+                </div>
+                <div>
+                    <label for="Suspension">Suspension (e.g., shocks, struts):</label>
+                    <input type="text" id="Suspension" name="Suspension">
+                </div>
+                <div>
+                    <label for="Lights">Lights (e.g., headlamps, indicators):</label>
+                    <input type="text" id="Lights" name="Lights">
+                </div>
+                <div>
+                    <label for="Tires">Tires (e.g., tread wear, pressure):</label>
+                    <input type="text" id="Tires" name="Tires">
+                </div>
+                <div>
+                    <label for="Windshield">Windshield (e.g., cracks, visibility):</label>
+                    <input type="text" id="Windshield" name="Windshield">
+                </div>
+                <div>
+                    <label for="Safe Loading">Safe Loading (e.g., cargo security, weight limits):</label>
+                    <input type="text" id="Safe Loading" name="Safe Loading">
+                </div>
+                <div>
+                    <label for="next-service-date">Next Service Date:</label>
+            <input type="date" id="next-service-date" name="next-service-date">
+                </div>
+            </div>
+        </div> 
+
+        <div class="form-section">
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Enter any additional comments or observations"></textarea>
+        </div>
+
+        <div class="submit-container">
+            <button type="submit">Submit Inspection</button>
+        </div>
+    </div>
+</body>
+</html>

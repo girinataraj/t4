@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trip Process</title>
+  <link rel="stylesheet" href="/css/tripprocess.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Trip Management</h1>
+
+    <div class="table-container">
+      <!-- In-Process Table -->
+      <h2>In-Process</h2>
+      <table class="trip-table">
+        <thead>
+          <tr>
+            <th>Driver Name</th>
+            <th>Driver ID</th>
+            <th>Vehicle ID</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John Doe</td>
+            <td>12345</td>
+            <td>V001</td>
+            <td>2025-01-26</td>
+            <td>10:00 AM</td>
+            <td><span class="status-icon green-icon"></span></td>
+          </tr>
+          <tr>
+            <td>Jane Smith</td>
+            <td>67890</td>
+            <td>V002</td>
+            <td>2025-01-26</td>
+            <td>11:30 AM</td>
+            <td><span class="status-icon green-icon"></span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Completed Table -->
+      <h2>Completed</h2>
+      <table class="trip-table">
+        <thead>
+          <tr>
+            <th>Driver Name</th>
+            <th>Driver ID</th>
+            <th>Vehicle ID</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark Taylor</td>
+            <td>54321</td>
+            <td>V003</td>
+            <td>2025-01-25</td>
+            <td>02:00 PM</td>
+            <td><span class="status-icon red-icon"></span></td>
+          </tr>
+          <tr>
+            <td>Emily Johnson</td>
+            <td>98765</td>
+            <td>V004</td>
+            <td>2025-01-25</td>
+            <td>04:00 PM</td>
+            <td><span class="status-icon red-icon"></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

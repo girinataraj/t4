@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Scheduling Input</title>
+    <link rel="stylesheet" href="/css/viewdriversch.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Driver Delivery Schedule Input</h1>
+
+        <div class="form-container">
+            <label for="driverID">Driver ID:</label>
+            <input type="text" id="driverID" placeholder="Enter unique driver ID">
+
+            <label for="driverName">Driver Name:</label>
+            <input type="text" id="driverName" placeholder="Enter driver name">
+
+            <label for="timeInput">Delivery Time:</label>
+            <input type="time" id="timeInput">
+
+            <label for="vehicleNumber">Vehicle Number:</label>
+            <input type="text" id="vehicleNumber" placeholder="Enter vehicle number">
+
+            <label for="date">Date:</label>
+            <input type="date" id="date">
+
+            <button class="small-btn" onclick="addDriver()">Add Driver</button>
+        </div>
+
+        <a href="/html/viewdriversch.html" class="small-btn">View Schedule</a>
+    </div>
+
+    <script src="/js/driversch.js"></script>
+</body>
+</html>

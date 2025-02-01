@@ -1,0 +1,174 @@
+/* Google Font Import Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 270px;/*box size*/
+    backdrop-filter: blur(22px);
+    background: #11101d;
+}
+
+.sidebar .logo-deatiles {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .logo-deatiles i {
+    font-size: 30px;
+    color:white;
+    height: 50px;
+    min-width: 78px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.sidebar .logo-deatiles .logo_name {
+    font-size: 22px;/*management header font size*/
+    color: #fff;
+    font-weight: 600;
+}
+.sidebar .nav-links {
+    background: #11101d;
+    backdrop-filter: blur(10px);
+    height: 100%;
+    padding-top: 30px;/*the hole bar size */
+}
+.sidebar .nav-links li {
+    position: relative;
+    list-style: none;
+    transition: all 0.4s ease;
+}
+.sidebar .nav-links li:hover {
+    background: #1d1b31;
+    backdrop-filter: blur(22px);
+}
+.sidebar .nav-links li .iocn-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sidebar .nav-links li i {
+    color: #fff;
+    height: 50px;/*the icon font size*/
+    min-width: 78px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+.sidebar .nav-links li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.sidebar .nav-links li a .link_name {
+    font-size: 18px;/*size*/
+    font-weight: 400;
+    color: #fff;
+}
+.sidebar .nav-links li .sub-menu {
+    padding: 6px 6px 14px 50px;/*sub menu padding*/
+    background: #1d1b31;
+    backdrop-filter: blur(10px);
+    display: none; /* Hide sub-menu by default */
+}
+.sidebar .nav-links li .sub-menu a {
+    color: #fff;
+    font-size: 15px;
+    padding: 5px 0;
+    white-space: nowrap;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+.sidebar .nav-links li .sub-menu a:hover {
+    opacity: 1;
+}
+.sidebar .nav-links li:hover .sub-menu {
+    display: block; /* Show sub-menu on hover */
+
+}
+.profile-details{
+    position:fixed;
+    bottom: 2px;
+    top: 220px;
+    left: 700px;
+    border-radius:10%;
+}
+.profile-content{
+    position: relative;
+    padding: auto;
+    left: 100px;
+}
+.profile-details img{
+    height: 340px;
+    width: 340px;
+    object-fit: cover;
+    margin: 0 14px 12px;
+}
+.sidebar.close .nav-links li .sub-menu{
+    position: absolute;
+    left: 100%;
+    top: -10px;
+    margin-top: 0;
+    padding: 10px 20px;
+    border-radius: 0 50px 50px 0;
+    transition: all 0.4s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+.sidebar.close .nav-links li:hover .sub-menu{
+    top:0px;
+    opacity: 1;
+    pointer-events:auto;
+}
+.sidebar .nav-links li .sub-menu .link_name{
+    display: none;
+    opacity: 1;
+    display: block;
+}
+.sidebar.close .nav-links li .sub-menu .link_name{
+    font-size: 18px;
+    opacity: 1;
+}
+#email-contact {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: #f39c12; /* Email icon colour*/
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+#email-contact a {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+}
+#email-contact:hover {
+    transform: scale(1.1);
+}
+.container{
+    left: 100px;
+
+}
+.container .upper{
+    left: 100%;
+    color: #f39c12;
+}
